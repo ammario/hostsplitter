@@ -3,7 +3,7 @@ HostSplitter is an HTTP reverse proxy and load balancer that distributes request
 
 
 ## Motivation
-I commonly run into an issue developing small golang websites: I want to use the same IP address for many sites that aren't large enough to justify their own server.
+I commonly run into an issue developing small golang websites: I want to use the same IP address for many sites that aren't large enough to justify their own VPS.
 
 ## Site files
 HostSplitter will look for site files by default in "/etc/hostsplitter/". HostSplitter will only read files with the .json extension.
@@ -32,6 +32,3 @@ HostSplitter provides 0 downtime reload functionality via SIGUSR1. E.g
 ```bash
 pkill -10 hostsplitter
 ```
-
-## Roadmap
-- SSL
